@@ -1,0 +1,76 @@
+.background {
+    background: rgba(0, 0, 0, 0.4) url('/bg.webp');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: auto;
+}
+
+#mainlogo {
+    animation: slideInFromTop 2s ease-out;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-25%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.space {
+    width: 30%;
+    border: 4px solid white;
+    border-radius: 350px;
+    display: block;
+    margin: auto;
+}
+
+.secRight {
+    background: rgba(0, 0, 0, 0.7) url('/secbg.jpeg');
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+
+    @apply bg-fixed
+}
+
+.regular-bg {
+    background: rgba(0, 0, 0, 0.7) url('/secbg.jpeg');
+    background-size: 100%;
+    background-blend-mode: darken;
+    background-position: center;
+    animation: scaleBackground 4s ease-in-out infinite;
+    background-attachment: fixed; /* Ensures the background remains fixed */
+}
+
+@keyframes scaleBackground {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 105%; /* Scales the background image */
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+.btn-initial {
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
