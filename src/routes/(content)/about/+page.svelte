@@ -30,5 +30,5 @@
     student astrophysics clubs for organizing interactive sessions and better
     outreach.
   </p>
-  <p>We at dhruva try to make astrophysics fun for us and everyone around!</p>
+  <p>We at dhruva try to make astrophysics fun for us and everyone around!!!</p>
 </div>
