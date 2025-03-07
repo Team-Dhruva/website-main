@@ -14,7 +14,7 @@
     // { href: "/events", text: "Events" },
     { href: "/team", text: "Team" },
     { href: "#contact", text: "Contact" },
-    { href: "#alumni", text: "Alumni" }
+    // { href: "#alumni", text: "Alumni" }
   ];
 
   if (browser) {
