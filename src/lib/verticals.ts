@@ -1,4 +1,4 @@
-export interface Verticals {
+export interface Vertical {
     name: string;
     slug: string;
     image?: string;
@@ -6,7 +6,7 @@ export interface Verticals {
     
 }
 
-export const verticals: Verticals[] = [
+export const verticals: Vertical[] = [
     {
         name: "Data Driven Astronomy",
         slug: "dda",
