@@ -9,28 +9,28 @@ export interface Verticals {
 export const verticals: Verticals[] = [
     {
         name: "Data Driven Astronomy",
-        slug: "data-driven-astronomy",
+        slug: "dda",
         description: "",
         
         image: "/projects/6-inch.webp"
     },
     {
         name: "Optical Astronomy",
-        slug: "optical-astronomy",
+        slug: "optical",
         description: "",
         
         image: "/projects/moon.webp"
     },
     {
         name: "Radio Astronomy",
-        slug: "radio-astronomy",
+        slug: "radio",
         description: "",
         
         image: "/projects/solar-radio.webp"
     },
     {
         name: "Research Division",
-        slug: "research-division",
+        slug: "research",
         description: "",
         
         image: "/projects/hornantenna.jpg"
