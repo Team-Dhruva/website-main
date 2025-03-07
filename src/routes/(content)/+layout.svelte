@@ -9,11 +9,12 @@
   const links = [
     { href: "/", text: "Home" },
     { href: "/about", text: "About" },
-    { href: "/projects", text: "Projects" },
+    { href: "/verticals", text: "Verticals" },
     { href: "/gallery", text: "Gallery" },
     // { href: "/events", text: "Events" },
     { href: "/team", text: "Team" },
     { href: "#contact", text: "Contact" },
+    { href: "#alumni", text: "Alumni" }
   ];
 
   if (browser) {
