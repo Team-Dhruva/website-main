@@ -5,11 +5,11 @@
 <div
   class="flex flex-col items-center max-w-screen-lg w-full mx-4 mb-4 mt-40 text-xl gap-4 relative"
 >
-  <h1 class="text-6xl text-center font-bold text-white">2 Inch Telescope</h1>
+  <h1 class="text-6xl text-center font-bold text-white">Radio Astronomy</h1>
 
   <div class="flex flex-col max-w-screen-lg w-full gap-2">
     <p>
-      Delve deep into msyteries of the universe and uncover secrets through analytics 
+      We aim to create a dynamic radio astronomy division where we design, build, and operate our own radio telescopes, advancing both our skills and the field of radio astronomy through hands-on projects and meaningful research.
     </p>
   </div>
 </div>
