@@ -1,5 +1,6 @@
 <script lang="ts">
   import { verticals } from "$lib/verticals";
+  //import VelocityScroll from "$lib/components/VelocityScroll.svelte";
 
   interface Vertical {
     name: string;
@@ -13,7 +14,14 @@
   <title>Verticals</title>
 </svelte:head>
 
-<div class="flex flex-col items-center max-w-screen-lg w-full mx-4 mb-4 mt-40 text-xl gap-4 relative">
+<div class="flex flex-col items-center max-w-screen-lg w-full mx-4 mb-4 mt-4 text-xl gap-4 relative">
+  <!-- ScrollBasedVelocityDemo component added at the top -->
+  <div class="relative flex w-full flex-col items-center justify-center overflow-hidden mb-12">
+    <p>DDA | RADIO | OPTICAL | RESEARCH</p>
+    <div class="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+    <div class="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
+  </div>
+
   <h1 class="text-6xl text-center font-bold text-white">Verticals</h1>
 
   <div class="flex flex-col max-w-screen-lg w-full">
