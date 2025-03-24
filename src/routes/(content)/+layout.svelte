@@ -11,7 +11,7 @@
     { href: "/about", text: "About" },
     { href: "/verticals", text: "Verticals" },
     { href: "/gallery", text: "Gallery" },
-    // { href: "/events", text: "Events" },
+    { href: "https://events.teamdhruva.com", text: "Events" },
     { href: "/team", text: "Team" },
     { href: "#contact", text: "Contact" },
     // { href: "#alumni", text: "Alumni" }

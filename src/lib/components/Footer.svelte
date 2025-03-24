@@ -2,8 +2,8 @@
   import Instagram from "$lib/icons/Instagram.svelte";
   import LinkedIn from "$lib/icons/LinkedIn.svelte";
   import YouTube from "$lib/icons/YouTube.svelte";
-  import { db } from "../../firebase";
-  import { collection, addDoc } from "firebase/firestore";
+  
+
 
   let email = '';
 
