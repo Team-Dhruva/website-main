@@ -2,6 +2,29 @@
   import Instagram from "$lib/icons/Instagram.svelte";
   import LinkedIn from "$lib/icons/LinkedIn.svelte";
   import YouTube from "$lib/icons/YouTube.svelte";
+  import { db } from "../../firebase";
+  import { collection, addDoc } from "firebase/firestore";
+
+  let email = '';
+
+  async function handleSubscribe(event) {
+    event.preventDefault();
+    if (email) {
+      try {
+        await addDoc(collection(db, "subscribers"), {
+          email: email,
+          timestamp: new Date()
+        });
+        email = '';
+        alert('Thank you for subscribing!');
+      } catch (e) {
+        console.error("Error adding document: ", e);
+        alert('Failed to subscribe. Please try again.');
+      }
+    } else {
+      alert('Please enter a valid email address.');
+    }
+  }
 </script>
 
 <footer class="bg-neutral-900 text-white pt-12 pb-6" id="contact">
@@ -92,11 +115,12 @@
       <h2 class="text-2xl font-semibold">
         Subscribe to join our Constellation!
       </h2>
-      <form class="space-y-4">
+      <form class="space-y-4" on:submit={handleSubscribe}>
         <div class="flex">
           <input
             type="email"
             placeholder="Enter your email"
+            bind:value={email}
             class="p-3 bg-neutral-800 border border-gray-700 rounded-l-md focus:outline-none flex-grow text-white"
           />
           <button

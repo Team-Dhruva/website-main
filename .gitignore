@@ -344,3 +344,4 @@ package
 /tmp
 .wrangler
 .env
+package-lock.json
