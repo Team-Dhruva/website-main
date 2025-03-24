@@ -12,14 +12,14 @@ export const verticals: Vertical[] = [
         slug: "dda",
         description: "",
         
-        image: "/projects/6-inch.webp"
+        image: "/projects/moon.webp"
     },
     {
         name: "Optical Astronomy",
         slug: "optical",
         description: "",
         
-        image: "/projects/moon.webp"
+        image: "/projects/6-inch.webp"
     },
     {
         name: "Radio Astronomy",
