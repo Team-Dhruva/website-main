@@ -32,7 +32,7 @@
     font-weight: bold;
   }
   .container {
-		font-size:1.5rem;
+    font-size: 1.5rem;
     max-width: 1200px;
     margin: auto;
     padding: 20px;
@@ -40,15 +40,13 @@
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-		justify-content: start;
-		margin-right : 9%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    padding: 20px;
   }
   .card {
-		
-		color: white;
-    background: black;;
+    color: white;
+    background: black;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -60,20 +58,27 @@
     transform: scale(1.05);
   }
   .card img {
-    width: 600px;
-    height: 250px;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-    margin-bottom: px;
+    margin-bottom: 10px;
   }
   .card a {
-		font-size:0.9rem;
+    font-size: 0.9rem;
     color: blue;
     text-decoration: none;
   }
   .card a:hover {
     text-decoration: underline;
   }
-	 
+  @media (max-width: 768px) {
+    .banner h1 {
+      font-size: 2.5rem;
+    }
+    .container {
+      font-size: 1.2rem;
+    }
+  }
 </style>
 
 <div class="banner">
