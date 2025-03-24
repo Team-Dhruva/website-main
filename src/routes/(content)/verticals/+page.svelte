@@ -72,7 +72,7 @@
     {#each verticals as vertical, index}
       {#if cardsVisible}
         <a
-          href={`/verticals/${vertical.slug}`}
+          href={vertical.slug === "research" ? "https://research.teamdhruva.com" : `/verticals/${vertical.slug}`}
           in:fade={{ delay: 100 + index * 150, duration: 400 }}
           class="group relative overflow-hidden rounded-xl"
           on:mouseenter={() => hoveredCard = index}
