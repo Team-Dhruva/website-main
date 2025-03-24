@@ -40,7 +40,7 @@
   <title>Verticals</title>
 </svelte:head>
 
-<div class="flex flex-col items-center max-w-screen-lg w-full mx-auto my-12 px-4 text-xl gap-8 relative">
+<div class="flex flex-col items-center max-w-screen-lg w-full mx-auto my-12 px-4 text-xl gap-8 relative mt-32">
   <!-- Modern animated title -->
   <div class="mb-16 relative">
     <h1 class="text-7xl md:text-8xl font-bold text-transparent" aria-label={titleText}>
