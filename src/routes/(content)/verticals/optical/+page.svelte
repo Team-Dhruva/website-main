@@ -8,9 +8,8 @@
     { title: "6” Reflector Newtonian Telescope", description: "Description", image: "https://pswscience.org/wp-content/uploads/2018/08/ns_gw_art-1024x576.jpg", link :"https://github.com/Team-Dhruva/website-main" },
     { title: "Project ballman", description: "Description", image: "https://i1.wp.com/www.thephysicsmill.com/blog/wp-content/uploads/nanograv.jpeg?fit=1585%2C1189", link:"https://github.com/Team-Dhruva/website-main" },
     { title: "Astrophotography", description: "Description", image: "https://astrobiology.nasa.gov/uploads/filer_public_thumbnails/filer_public/48/5f/485fedff-acf9-4d62-b817-4ede5fcb0240/artist_s_impression_of_gaia.jpg__930x580_q85_crop_subject_location-465%2C290_subsampling-2.jpg", link:"https://github.com/Team-Dhruva/website-main" },
-    { title: "Optical Research", description: "Description", image: "https://sloan.org/storage/app/media/programs/science/SDSS/cropped-images/hero%20image%20sloan_telescope-0-182-1200-714-1462225014.jpg", link:"https://github.com/Team-Dhruva/website-main" },
-  
-  ];
+    { title: "Optical Research", description: "Description", image: "https://sloan.org/storage/app/media/programs/science/SDSS/cropped-images/hero%20image%20sloan_telescope-0-182-1200-714-1462225014.jpg", link:"https://github.com/Team-Dhruva/website-main" },
+  ];
 </script>
 
 <style>
@@ -50,9 +49,7 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-  }
-  .description{
-    font-size: 0.69rem;
+    text-decoration: none; /* Remove underline from links */
   }
   .card:hover {
     transform: scale(1.05);
@@ -63,13 +60,11 @@
     object-fit: cover;
     margin-bottom: 10px;
   }
-  .card a {
-    font-size: 0.9rem;
-    color: blue;
-    text-decoration: none;
+  .card h3, .card p {
+    margin: 0;
   }
-  .card a:hover {
-    text-decoration: underline;
+  .description {
+    font-size: 0.9rem; /* Adjust the font size as needed */
   }
   @media (max-width: 768px) {
     .banner h1 {
@@ -82,20 +77,19 @@
 </style>
 
 <div class="banner">
-  <h1>Data Driven Astronomy</h1>
+  <h1>Optical Astronomy</h1>
 </div>
 
 <div class="container">
-  <p>Delve deep into mysteries of the universe and uncover secrets through analytics</p>
+  <p>Beauty lies in the eyes of the beholder.</p>
 </div>
 
 <div class="grid container">
   {#each cards as card}
-    <div class="card">
+    <a class="card" href={card.link} target="_blank" rel="noopener noreferrer">
       <img src={card.image} alt={card.title} />
       <h3>{card.title}</h3>
       <p class="description">{card.description}</p>
-      <a href={card.link}>Project Repository</a>
-    </div>
+    </a>
   {/each}
 </div>
