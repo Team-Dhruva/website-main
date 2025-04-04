@@ -3,6 +3,7 @@
   import TeamMember from "$lib/components/TeamMember.svelte";
   import { facultymembers } from "$lib/team";
   import Faculty from "$lib/components/Faculty.svelte";
+  import PreviousYearsTeam from "$lib/components/PreviousYearsTeam.svelte";
 </script>
 
 <svelte:head>
@@ -24,6 +25,8 @@
       <TeamMember {member} />
     {/each}
   </div>
+  
+  <PreviousYearsTeam />
 </div>
 
 <style>
