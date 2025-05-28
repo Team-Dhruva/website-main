@@ -32,7 +32,7 @@ export const teamMembers: TeamMember[] = [
         role: "Team Captain",
         linkedin: null,
         instagram: null,
-        image: "/team/core/aryan.jpg",
+        image: "/team/core-2024/aryan.jpg",
         link: "aryan-namboodiri",
     },
     {
@@ -40,15 +40,15 @@ export const teamMembers: TeamMember[] = [
         role: "Team Captain",
         linkedin: null,
         instagram: null,
-        image: "/team/core/khushi.jpg",
+        image: "/team/core-2024/khushi.jpg",
         link: "khushi-ligade",
     },
     {
-        name: "Sunil",
+        name: "Manohara",
         role: "Technical Lead",
         linkedin: null,
         instagram: null,
-        image: "/team/core/sunil.jpg",
+        image: "/team/core-2024/manohara.jpg",
         link: "sunil-joshi",
     },
     {
@@ -60,11 +60,11 @@ export const teamMembers: TeamMember[] = [
         link: "aditi-n-pai",
     },
     {
-        name: "Shashank",
+        name: "Srujan",
         role: "Optical Head",
         linkedin: null,
         instagram: null,
-        image: "/team/core/shashank.jpg",
+        image: "/team/core-2024/srujan.jpg",
         link: null,
     },
     {
@@ -92,11 +92,11 @@ export const teamMembers: TeamMember[] = [
         link: null,
     },
     {
-        name: "Aneesh",
+        name: "Prarthana",
         role: "DDA Head",
         linkedin: null,
         instagram: null,
-        image: "/team/core/aneesh.jpg",
+        image: "/team/core-2024/prarthana.jpg",
         link: null,
     },
     {
