@@ -70,7 +70,7 @@ export const teamMembers: TeamMember[] = [
         role: "Coding Lead",
         linkedin: null,
         instagram: null,
-        image: "/team/core-2024/atharva.jpg",
+        image: "/team/core-2024/atharva.png",
         link: null,
     },
     {
@@ -86,7 +86,7 @@ export const teamMembers: TeamMember[] = [
         role: "Optical Electronics Lead",
         linkedin: null,
         instagram: null,
-        image: "/team/core-2024/harsha.jpg",
+        image: "/team/core-2024/harsha.png",
         link: null,
     },
     {
@@ -94,7 +94,7 @@ export const teamMembers: TeamMember[] = [
         role: "Optical Electronics Lead",
         linkedin: null,
         instagram: null,
-        image: "/team/core-2024/srinidhi.jpg",
+        image: "/team/core-2024/srinidhi.png",
         link: null,
     },
     {
@@ -102,7 +102,7 @@ export const teamMembers: TeamMember[] = [
         role: "Radio Head",
         linkedin: null,
         instagram: null,
-        image: "/team/core-2024/yogesh.jpg",
+        image: "/team/core-2024/yogesh.png",
         link: null,
     },
     {
@@ -118,7 +118,7 @@ export const teamMembers: TeamMember[] = [
         role: "Radio Research Lead",
         linkedin: null,
         instagram: null,
-        image: "/team/core-2024/manav.jpg",
+        image: "/team/core-2024/manav.png",
         link: null,
     },
     {
@@ -126,7 +126,7 @@ export const teamMembers: TeamMember[] = [
         role: "Radio Research Lead",
         linkedin: null,
         instagram: null,
-        image: "/team/core-2024/aditya.jpg",
+        image: "/team/core-2024/aditya.png",
         link: null,
     },
     {
@@ -134,7 +134,7 @@ export const teamMembers: TeamMember[] = [
         role: "Radio Electronics Lead",
         linkedin: null,
         instagram: null,
-        image: "/team/core-2024/sricharan.jpg",
+        image: "/team/core-2024/sricharan.png",
         link: null,
     },
     {
@@ -142,7 +142,7 @@ export const teamMembers: TeamMember[] = [
         role: "Radio Electronics Lead",
         linkedin: null,
         instagram: null,
-        image: "/team/core-2024/vineet.jpg",
+        image: "/team/core-2024/vineeth.png",
         link: null,
     },
     {
