@@ -20,7 +20,7 @@
   </div>
   <h1 class="text-6xl text-center font-bold text-white">Team</h1>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
     {#each teamMembers as member}
       <TeamMember {member} />
     {/each}
