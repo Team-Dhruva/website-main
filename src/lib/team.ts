@@ -184,10 +184,10 @@ export const teamMembers: TeamMember[] = [
 
 export const facultymembers: Faculty[]=[
     {
-        name: "Dr. Karthik Shastry",
+        name: "Dr. Niranjana K M ",
         linkedin:  null,
-        image: "team/faculty/kathik_sir.jpeg",
-        link: "https://rvce.edu.in/ph-faculty-ks"
+        image: "team/faculty/niranjan_sir.jpg",
+        link: "https://rvce.edu.in/Niranjana"
     },
     {
         name: "Dr. Venugopal K",

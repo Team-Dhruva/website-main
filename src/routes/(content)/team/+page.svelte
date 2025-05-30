@@ -25,6 +25,8 @@
       <TeamMember {member} />
     {/each}
   </div>
+
+  
   
   <PreviousYearsTeam />
 </div>
