@@ -3,55 +3,44 @@ export interface GalleryImage {
     alt: string;
 }
 
-// write an array of 10 galleryImage each with src as "" and alt as 'under construction'
-
 export const galleryImages: GalleryImage[] = [
-    {
-        src: "/gallery/1.jpg",
-        alt: "Icebreaker session",
-    },
-    {
-        src: "/gallery/2.jpg",
-        alt: "Stargazing Spectacles",
-    },
-    {
-        src: "/gallery/3.jpg",
-        alt: "Talk by Ram Mohan Sir",
-    },
-    {
-        src: "/gallery/4.jpg",
-        alt: "dhRuVa 2024 Batch",
-    },
-    {
-        src: "/gallery/5.jpg",
-        alt: "dhRuVa 2021 Batch",
-    },
-    {
-        src: "/gallery/6.jpg",
-        alt: "Ethnic Day 2024",
-    },
-    {
-        src: "/gallery/7.jpg",
-        alt: "Solar Observation",
-    },
-    {
-        src: "/gallery/8.jpg",
-        alt: "Solar Telescope",
-    },
-    {
-        src: "/gallery/9.jpg",
-        alt: "Intra-club Hackathon",
-    },
-    {
-        src: "/gallery/10.jpg",
-        alt: "Intra-club Hackathon",
-    },
-    {
-        src: "/gallery/11.jpg",
-        alt: "dhRuVa 2022 Batch",
-    },
-    {
-        src: "/gallery/12.jpg",
-        alt: "2-inch Galilean Telescope",
-    },
-]
+    { src: "/gallery/1.jpg", alt: "Icebreaker session" },
+    { src: "/gallery/2.jpg", alt: "Stargazing Spectacles" },
+    { src: "/gallery/3.jpg", alt: "Talk by Ram Mohan Sir" },
+    { src: "/gallery/4.jpg", alt: "dhRuVa 2024 Batch" },
+    { src: "/gallery/5.jpg", alt: "dhRuVa 2021 Batch" },
+    { src: "/gallery/6.jpg", alt: "Ethnic Day 2024" },
+    { src: "/gallery/7.jpg", alt: "Solar Observation" },
+    { src: "/gallery/8.jpg", alt: "Solar Telescope" },
+    { src: "/gallery/9.jpg", alt: "Intra-club Hackathon" },
+    { src: "/gallery/10.jpg", alt: "Intra-club Hackathon" },
+    { src: "/gallery/11.jpg", alt: "dhRuVa 2022 Batch" },
+    { src: "/gallery/12.jpg", alt: "2-inch Galilean Telescope" },
+    { src: "/gallery/13.jpg", alt: "Gallery Image 13" },
+    { src: "/gallery/14.jpg", alt: "Gallery Image 14" },
+    { src: "/gallery/15.jpg", alt: "Gallery Image 15" },
+    { src: "/gallery/16.jpg", alt: "Gallery Image 16" },
+    { src: "/gallery/17.jpg", alt: "Gallery Image 17" },
+    { src: "/gallery/18.jpg", alt: "Gallery Image 18" },
+    { src: "/gallery/19.jpg", alt: "Gallery Image 19" },
+    { src: "/gallery/20.jpg", alt: "Gallery Image 20" },
+    { src: "/gallery/21.jpg", alt: "Gallery Image 21" },
+    { src: "/gallery/22.jpg", alt: "Gallery Image 22" },
+    { src: "/gallery/23.jpg", alt: "Gallery Image 23" },
+    { src: "/gallery/24.jpg", alt: "Gallery Image 24" },
+    { src: "/gallery/25.jpg", alt: "Gallery Image 25" },
+    { src: "/gallery/26.jpg", alt: "Gallery Image 26" },
+    { src: "/gallery/27.jpg", alt: "Gallery Image 27" },
+    { src: "/gallery/28.jpg", alt: "Gallery Image 28" },
+    { src: "/gallery/29.jpg", alt: "Gallery Image 29" },
+    { src: "/gallery/30.jpg", alt: "Gallery Image 30" },
+    { src: "/gallery/31.jpg", alt: "Gallery Image 31" },
+    { src: "/gallery/32.jpg", alt: "Gallery Image 32" },
+    { src: "/gallery/33.jpg", alt: "Gallery Image 33" },
+    { src: "/gallery/34.jpg", alt: "Gallery Image 34" },
+    { src: "/gallery/35.jpg", alt: "Gallery Image 35" },
+    { src: "/gallery/36.jpg", alt: "Gallery Image 36" },
+    { src: "/gallery/37.jpg", alt: "Gallery Image 37" },
+    { src: "/gallery/38.jpg", alt: "Gallery Image 38" },
+    { src: "/gallery/39.jpg", alt: "Gallery Image 39" },
+];
