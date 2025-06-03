@@ -186,7 +186,7 @@ export const facultymembers: Faculty[]=[
     {
         name: "Dr. Niranjana K M ",
         linkedin:  null,
-        image: "team/faculty/niranjan_sir.jpg",
+        image: "team/faculty/niranjana_sir.jpg",
         link: "https://rvce.edu.in/Niranjana"
     },
     {
