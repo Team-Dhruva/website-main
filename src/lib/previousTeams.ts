@@ -7,6 +7,29 @@ export interface YearTeam {
 
 export const previousTeams: YearTeam[] = [
   {
+    year: 2024,
+    members: [
+      {
+        name: "Tejas R",
+        role: "Team Captain",
+        linkedin: null,
+        instagram: null,
+        image: "/team/semicore-2024/tejas.jpg",
+        link: null,
+      },
+      {
+        name: "Krishna Vidhiprasad",
+        role: "Team Captain",
+        linkedin: null,
+        instagram: null,
+        image: "/team/semicore-2024/krishnavdp.png",
+        link: null,
+      }
+      
+      
+    ],
+  },
+  {
     year: 2023,
     members: [
       {
@@ -105,8 +128,7 @@ export const previousTeams: YearTeam[] = [
         image: "/team/previous/2023/karthik.jpg",
         link: null,
       },
-      
     ],
-  },
+  }
   
-]; 
+];
