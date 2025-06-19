@@ -14,7 +14,7 @@ export const previousTeams: YearTeam[] = [
         role: "Team Captain",
         linkedin: null,
         instagram: null,
-        image: "/team/semicore-2024/tejas.jpg",
+        image: "/team/semicore-2024/tejasr.jpg",
         link: null,
       },
       {
@@ -109,7 +109,7 @@ export const previousTeams: YearTeam[] = [
         role: "DDA Head",
         linkedin: null,
         instagram: null,
-        image: "/team/core/.jpg",
+        image: "/team/core/sanjan.jpg",
         link: null,
       },
       {
