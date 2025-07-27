@@ -13,6 +13,7 @@
     { href: "/gallery", text: "Gallery" },
     { href: "https://events.teamdhruva.com", text: "Events" },
     { href: "/team", text: "Team" },
+    { href: "/sponsorship", text: "Sponsorship" },
     { href: "#contact", text: "Contact" },
     // { href: "#alumni", text: "Alumni" }
   ];
