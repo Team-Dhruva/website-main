@@ -2,23 +2,25 @@
   import Instagram from "$lib/icons/Instagram.svelte";
   import LinkedIn from "$lib/icons/LinkedIn.svelte";
   import YouTube from "$lib/icons/YouTube.svelte";
-  
-
 
   let email = '';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz0Q2kGLW13PZp1UdsiSCQLK3pCJg_uO-5Pfed6zZPG45amj98jaNBqr1EO2jifoyv_/exec';
 
   async function handleSubscribe(event) {
     event.preventDefault();
     if (email) {
       try {
-        await addDoc(collection(db, "subscribers"), {
-          email: email,
-          timestamp: new Date()
+        const response = await fetch(scriptURL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams({ email })
         });
-        email = '';
-        alert('Thank you for subscribing!');
-      } catch (e) {
-        console.error("Error adding document: ", e);
+
+        const text = await response.text();
+        alert(text || 'Thank you for subscribing!');
+        email = ''; // clears the input
+      } catch (error) {
+        console.error('Error:', error);
         alert('Failed to subscribe. Please try again.');
       }
     } else {
@@ -26,6 +28,7 @@
     }
   }
 </script>
+
 
 <footer class="bg-neutral-900 text-white pt-12 pb-6" id="contact">
   <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
