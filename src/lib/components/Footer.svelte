@@ -8,26 +8,36 @@
 
   async function handleSubscribe(event) {
     event.preventDefault();
-    if (email) {
-      try {
-        const response = await fetch(scriptURL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams({ email })
-        });
+    const trimmedEmail = email.trim();
 
-        const text = await response.text();
-        alert(text || 'Thank you for subscribing!');
-        email = ''; // clears the input
-      } catch (error) {
-        console.error('Error:', error);
-        alert('Failed to subscribe. Please try again.');
+    if (!trimmedEmail) {
+      alert("Please enter a valid email.");
+      return;
+    }
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        body: new URLSearchParams({ email: trimmedEmail }),
+      });
+
+      const result = await response.json();
+
+      if (result.status === "duplicate") {
+        alert("You have already subscribed with this email.");
+      } else if (result.status === "success") {
+        alert("Thank you for subscribing!");
+        email = ''; // Clear the input
+      } else {
+        alert("Something went wrong. Try again.");
       }
-    } else {
-      alert('Please enter a valid email address.');
+    } catch (error) {
+      console.error("Subscription error:", error);
+      alert("Error while subscribing.");
     }
   }
 </script>
+
 
 
 <footer class="bg-neutral-900 text-white pt-12 pb-6" id="contact">
