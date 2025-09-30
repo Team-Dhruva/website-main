@@ -2,30 +2,43 @@
   import Instagram from "$lib/icons/Instagram.svelte";
   import LinkedIn from "$lib/icons/LinkedIn.svelte";
   import YouTube from "$lib/icons/YouTube.svelte";
-  
-
 
   let email = '';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz0Q2kGLW13PZp1UdsiSCQLK3pCJg_uO-5Pfed6zZPG45amj98jaNBqr1EO2jifoyv_/exec';
 
   async function handleSubscribe(event) {
     event.preventDefault();
-    if (email) {
-      try {
-        await addDoc(collection(db, "subscribers"), {
-          email: email,
-          timestamp: new Date()
-        });
-        email = '';
-        alert('Thank you for subscribing!');
-      } catch (e) {
-        console.error("Error adding document: ", e);
-        alert('Failed to subscribe. Please try again.');
+    const trimmedEmail = email.trim();
+
+    if (!trimmedEmail) {
+      alert("Please enter a valid email.");
+      return;
+    }
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        body: new URLSearchParams({ email: trimmedEmail }),
+      });
+
+      const result = await response.json();
+
+      if (result.status === "duplicate") {
+        alert("You have already subscribed with this email.");
+      } else if (result.status === "success") {
+        alert("Thank you for subscribing!");
+        email = ''; // Clear the input
+      } else {
+        alert("Something went wrong. Try again.");
       }
-    } else {
-      alert('Please enter a valid email address.');
+    } catch (error) {
+      console.error("Subscription error:", error);
+      alert("Error while subscribing.");
     }
   }
 </script>
+
+
 
 <footer class="bg-neutral-900 text-white pt-12 pb-6" id="contact">
   <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
